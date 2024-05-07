@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .home,
+  .services,
+  .products,
+  .sign-up {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .services {
+     background-image: url('IMG_2946.JPG');  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #470f0f;
+    font-size: 100px;
   }
-}
+  
+  .products {
+     background-image: url('IMG_2946.JPG');  
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .sign-up {
+      background-image: url('IMG_2946.JPG');  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  .logo{
+    width: 80;
+    height: 70;
+  }
+  .background-container {
+    position: relative; /* Positioning context for absolutely positioned children */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .background-image {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover the container */
+  }
+  
+  .button-container {
+    position: absolute; /* Position absolutely */
+    top: 50%; /* Align at the center vertically */
+    left: 50%; /* Align at the center horizontally */
+    transform: translate(-50%, -50%); /* Center the container */
+    display: flex; /* Use flexbox for button alignment */
+  }
+  
+  .button {
+    margin: 0 10px; /* Add margin between buttons */
+    padding: 10px 20px; /* Add padding to buttons */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+  
